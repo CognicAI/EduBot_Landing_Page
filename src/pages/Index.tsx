@@ -1,3 +1,4 @@
+
 import { Bot, Zap, Shield, Users, Globe, Database, Brain, Code, ChevronRight, CheckCircle, ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -239,7 +240,7 @@ const Index = () => {
             Department of Artificial Intelligence Innovation
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
             <CardHeader className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
@@ -256,6 +257,15 @@ const Index = () => {
               </div>
               <CardTitle className="text-xl">K. Abhishek</CardTitle>
               <CardDescription>Roll No: 22EG107A30</CardDescription>
+            </CardHeader>
+          </Card>
+          <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
+            <CardHeader className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
+                AS
+              </div>
+              <CardTitle className="text-xl">A. Saiprashanth</CardTitle>
+              <CardDescription>Roll No: 22EG107A01</CardDescription>
             </CardHeader>
           </Card>
         </div>
