@@ -1,5 +1,4 @@
-
-import { Bot, Zap, Shield, Users, Globe, Database, Brain, Code, ChevronRight, CheckCircle, ArrowRight } from "lucide-react";
+import { Bot, Zap, Shield, Users, Globe, Database, Brain, Code, ChevronRight, CheckCircle, ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -130,6 +129,77 @@ const Index = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Demo Video Section */}
+      <section className="container mx-auto px-6 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4 text-gray-900">
+            See EduBot in Action
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Watch how EduBot dynamically retrieves and summarizes real-time information 
+            from college websites to answer user queries instantly.
+          </p>
+        </div>
+        
+        <div className="max-w-4xl mx-auto">
+          <div className="relative bg-gradient-to-br from-indigo-100 to-purple-100 rounded-3xl p-8">
+            <div className="relative bg-black rounded-2xl overflow-hidden shadow-2xl">
+              {/* Video placeholder with play button */}
+              <div className="aspect-video bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center relative group cursor-pointer">
+                <div className="absolute inset-0 bg-black/20"></div>
+                <div className="relative z-10 flex flex-col items-center">
+                  <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center mb-4 group-hover:bg-white transition-colors duration-300 group-hover:scale-110 transform">
+                    <Play className="h-8 w-8 text-indigo-600 ml-1" />
+                  </div>
+                  <span className="text-white text-lg font-semibold">Play Demo Video</span>
+                  <span className="text-white/80 text-sm mt-1">Duration: 2:30</span>
+                </div>
+                
+                {/* Demo preview content */}
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <Bot className="h-4 w-4 text-white" />
+                      <span className="text-white text-sm font-medium">EduBot Demo</span>
+                    </div>
+                    <div className="text-white/90 text-sm">
+                      "What are the admission requirements for Computer Science?"
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Video description */}
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-3 shadow-md">
+                  <Zap className="h-6 w-6 text-indigo-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Real-Time Scraping</h3>
+                <p className="text-sm text-gray-600">Watch how EduBot extracts live data from college websites</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-3 shadow-md">
+                  <Brain className="h-6 w-6 text-indigo-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">AI Summarization</h3>
+                <p className="text-sm text-gray-600">See intelligent content processing with GEMINI 1.5 FLASH</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-3 shadow-md">
+                  <Users className="h-6 w-6 text-indigo-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">User Interaction</h3>
+                <p className="text-sm text-gray-600">Experience the intuitive chat interface in action</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
