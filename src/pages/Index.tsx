@@ -1,8 +1,9 @@
 
-import { Bot, Zap, Shield, Users, Globe, Database, Brain, Code, ChevronRight, CheckCircle, ArrowRight, Play } from "lucide-react";
+import { Bot, Zap, Shield, Users, Globe, Database, Brain, Code, ChevronRight, CheckCircle, ArrowRight, Play, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
@@ -71,9 +72,11 @@ const Index = () => {
               EduBot
             </span>
           </div>
-          <Button variant="outline" className="hidden md:flex">
-            Contact Inventors
-          </Button>
+          <Link to="/contact">
+            <Button variant="outline" className="hidden md:flex">
+              Contact Inventors
+            </Button>
+          </Link>
         </nav>
       </header>
 
@@ -244,10 +247,25 @@ const Index = () => {
           <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
             <CardHeader className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">
-                PH
+                HP
               </div>
-              <CardTitle className="text-xl">P. Harsha Vardhan</CardTitle>
-              <CardDescription>Roll No: 22EG107A47</CardDescription>
+              <CardTitle className="text-xl">Harsha Vardhanu Parnandi</CardTitle>
+              <CardDescription className="mb-3">Roll No: 22EG107A47</CardDescription>
+              <div className="text-sm text-gray-600 space-y-1">
+                <p className="font-medium">B.Tech, AI & Machine Learning</p>
+                <div className="flex items-center justify-center text-xs space-x-1">
+                  <Mail className="h-3 w-3" />
+                  <span>harshajustin2@gmail.com</span>
+                </div>
+                <div className="flex items-center justify-center text-xs space-x-1">
+                  <Phone className="h-3 w-3" />
+                  <span>+767-1016609</span>
+                </div>
+                <div className="flex items-center justify-center text-xs space-x-1">
+                  <MapPin className="h-3 w-3" />
+                  <span>Anurag University, Hyderabad</span>
+                </div>
+              </div>
             </CardHeader>
           </Card>
           <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm">
@@ -353,9 +371,11 @@ const Index = () => {
               Request Demo
               <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-indigo-600">
-              Contact Inventors
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-indigo-600">
+                Contact Inventors
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
