@@ -71,3 +71,29 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Project Idea and Invention
+
+### Description of the Invention
+
+EduBot is a dynamic, real-time information retrieval chatbot designed for college websites. It directly scrapes, parses, and summarizes relevant information from the official college website in response to user queries. This eliminates the need for pre-trained models or hard-coded FAQs. The system ensures information accuracy by automatically reflecting any updates made to the website, providing a consistently up-to-date and reliable user experience. It utilizes a database of URLs, semantic search on stored URLs, and Large Language Models (LLMs) for summarization.
+
+### Field of the Invention
+
+This invention falls under the domain of Artificial Intelligence, Natural Language Processing, Information Retrieval, Web Scraping, Chatbot Technology, and potentially Educational Technology.
+
+### Main Objective
+
+To develop a dynamic, real-time information retrieval chatbot for college websites that directly extracts and summarizes information from the official website in response to user queries.
+
+### Secondary Objectives
+
+- To eliminate the need for pre-trained models or hard-coded FAQs.
+- To ensure information accuracy by automatically reflecting website updates.
+- To provide a consistently up-to-date and reliable user experience.
+- To be universally applicable across diverse college websites.
+- To offer a scalable and efficient method for delivering accurate and timely information.
+
+### Background of the Invention
+
+Traditional methods for providing information on college websites often involve static pages, pre-defined FAQs, or chatbots relying on pre-trained data. These methods can become outdated quickly and may not always address specific user queries effectively, requiring manual updates and potentially missing recent changes on the website.
