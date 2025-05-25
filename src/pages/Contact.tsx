@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Bot, Mail, Phone, MapPin, Send, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,7 +17,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY"); // User will need to replace this
+    formData.append("access_key", "50ece616-6116-4428-bb1d-c6e4f3a96e75");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
