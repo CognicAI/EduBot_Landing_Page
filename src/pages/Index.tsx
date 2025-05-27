@@ -197,7 +197,7 @@ const Index = () => {
                 className="w-full h-full object-cover" 
                 poster="/placeholder.svg" 
               >
-                <source src="/videos/edubot-demo.mkv" type="video/mp4" />
+                <source src="/videos/edubot-demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -423,7 +423,7 @@ const Index = () => {
               <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-indigo-700 dark:bg-transparent dark:border-gray-300 dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-indigo-700 w-full sm:w-auto">
+              <Button size="lg" variant="secondary" className="bg-white text-indigo-600 hover:bg-gray-100 dark:bg-slate-100 dark:text-indigo-600 dark:hover:bg-slate-200 w-full sm:w-auto">
                 Contact Inventors
               </Button>
             </Link>
